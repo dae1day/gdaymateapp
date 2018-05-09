@@ -93,6 +93,6 @@ end
 
 
 
-config.action_mailer.default_url_options = { host: 'agile-beyond-42133.herokuapp.com' }
+config.action_mailer.default_url_options = { host: 'gdaytravelmate.herokuapp.com' }
 
 end
