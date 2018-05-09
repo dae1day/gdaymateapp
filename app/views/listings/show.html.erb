@@ -25,5 +25,12 @@
   <%= @listing.user %>
 </p>
 
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
+
+<% if current_user == @listing.user %>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> 
+<%= link_to 'Destroy', @listing, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<% end %>
+
 <%= link_to 'Back', listings_path %>

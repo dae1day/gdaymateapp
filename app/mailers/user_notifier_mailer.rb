@@ -1,5 +1,5 @@
 class UserNotifierMailer < ApplicationMailer
-  
+
     class UserNotifier < ActionMailer::Base
         default :from => 'any_from_address@example.com'
       
@@ -10,5 +10,4 @@ class UserNotifierMailer < ApplicationMailer
           :subject => 'Thanks for signing up for our amazing app' )
         end
       end
-      
 end
