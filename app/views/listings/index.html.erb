@@ -1,7 +1,57 @@
 
 <p id="notice"><%= notice %></p>
-
+<div class="container">
 <h1>Listings</h1>
+
+<% @listings.each do |listing| %>
+
+
+    <div class="tour-section">
+      <div class ="row tour-title">
+          <div class="col-md-6">
+            <h1> <%= listing.title %> </h1>
+          </div>
+
+          <div class="col-md-6">
+            <h1> <%= listing.title %> </h1>
+          </div>
+
+      </div>
+
+      <div class="row tour-info">  
+          <div class="col-md-6 col-sm-12 tour-image-box">
+            <img class="tour-image" src="<%= listing.image %>" alt="user display picture">
+          </div>
+
+
+          <div class="col-md-6 col-sm-12 tour-info-box">
+          
+              <div>
+
+                <p>Languages: English, French</p>
+                <p>Interest: Birdwatching</p>
+                <p>Date: <%= listing.date %></p>
+                <p>Cost: $<%= listing.cost %></p>
+                
+                  <button type="button" class="btn btn-dark"><%= link_to 'Details', listing %></button>
+                
+
+              </div>
+
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <% end %>
+
+
+
+
+
+
 
 <table>
   <thead>
@@ -35,3 +85,4 @@
 
 <%= link_to 'New Listing', new_listing_path %>
 
+</div>
