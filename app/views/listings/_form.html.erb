@@ -12,40 +12,42 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :listing_title %>
-  </div>
+<div class="tour-form">
+    <div class="field">
+      <%= form.label :title %><br>
+      <%= form.text_field :title, id: :listing_title %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :listing_description %>
-  </div>
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.text_field :date, id: :listing_date %>
-  </div>
-  <div class="field">
-    <%= form.label :cost %>
-    <%= form.text_field :cost, id: :listing_cost %>
-  </div>
+    <div class="field">
+      <%= form.label :description %><br>
+      <%= form.text_area :description, id: :listing_description %>
+    </div>
 
- 
+    <div class="field">
+      <%= form.label :date %><br>
+      <%= form.text_field :date, id: :listing_date %>
+    </div>
 
-  <div class="field">
-    Image
-    <%= form.file_field :image %>
-  </div>
+    <div class="field">
+      <%= form.label :cost %><br>
+      <%= form.text_field :cost, id: :listing_cost %>
+    </div>
 
-  <div class="field">
-  <%= form.label :itinerary %>
-  <%= form.text_area :itinerary, id: :listing_itinerary %>
+    <div class="field">
+      Image
+      <%= form.file_field :image %>
+    </div>
+
+    <div class="field">
+    <%= form.label :itinerary %><br>
+    <%= form.text_area :itinerary, id: :listing_itinerary %>
+    </div>
+
+    <br>
+    <div class="actions">
+     <%= form.submit %>
+    </div>
+
+  <% end %>
 </div>
 
-
- 
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
