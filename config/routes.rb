@@ -17,11 +17,6 @@ Rails.application.routes.draw do
   # get 'home', to: 'pages#home'
 
 
-    
-  get 'tours', to: 'listings#index'
-  get 'mytours', to: 'listings#show'
-  get 'newtour', to: 'listings#new'
-
 
 end
 

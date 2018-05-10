@@ -6,6 +6,20 @@ https://gdaytravelmate.herokuapp.com/
 
 https://github.com/dae1day/gdaymateapp
 
+- visit the website
+- sign up with email and password
+- click on my profile
+- click on edit 
+- fill in details
+- click on tours then on all tours
+- browse through tours or
+- create new tour
+- fill in details of tour
+- click on another persons tour details and inspect
+- either choose to buy or go back
+
+
+
 ## **Brainstorming**
 Researching popular business ideas online, understanding trending 2-sided marketplaces
 Ideas:
@@ -206,6 +220,8 @@ I have decided to go with palanquin, josefin sans and sans serif as the final de
 
 ## **Flowchart**
 
+https://drive.google.com/file/d/1ywWcI8W3iROSNtXYjs4N4ls-3MMuxdN7/view?usp=sharing
+
 This is the first proposed flowchart diagram. Starting from the home page, you can navigate towards these other options/pages. Certain pages will have limits for users that are not logged in or do not own certain posts, in this case tour profiles.
 
 <img src="images/flowchart.png">
@@ -239,6 +255,9 @@ here is the screenshot of the inital board:
 
 <img src="images/trello-board.png">
 
+Almost finished task board
+<img src="images/trello-board2.png">
+
 ## **Future Development**
 
 In future development I hope to take away the cost feature and implement a more negotiable market place. 
@@ -249,3 +268,11 @@ A chat feature would also be a plus as it can help users communicate with one an
 ## **Project Improvements**
 
 the project could be improved with a better search feature which can search with profile names and long with tour fields. 
+
+
+## **Code Review**
+
+Joseph Park, Christopher Forrest & Rhys Woodbury reviewed my code and vice-versa.
+<img src="images/code-review-chris.png">
+<img src="images/code-review-joseph.png">
+<img src="images/code-review-joseph2.png">
