@@ -6,8 +6,10 @@ class ListingsController < ApplicationController
   def index
     if params[:user_id] and (params[:user_id].to_i == current_user.id) then
       @listings = current_user.listings
+      @profiles = Profile.all
     else
       @listings = Listing.all
+      @profiles = Profile.all
     end
   end
 

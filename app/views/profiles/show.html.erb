@@ -1,8 +1,26 @@
+<div class="container">
+
+<h1>
+My Profile
+</h1>
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
   <%= @profile.name %>
+</p>
+
+
+<p>
+
+<%= image_tag(@profile.image_url.to_s) %>
+</p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@profile.image.to_s)%>
+
+
 </p>
 
 <p>
