@@ -5,7 +5,7 @@ class UsersController < ApplicationController
         if @user.save
           # Deliver the signup email
           UserNotifier.send_signup_email(@user).deliver
-          redirect_to(@user, :notice => 'User created')
+          redirect_to(@user.profile, :notice => 'User created')
         else
           render :action => 'new'
         end

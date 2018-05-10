@@ -4,12 +4,17 @@ class ListingsController < ApplicationController
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all
+    if params[:user_id] and (params[:user_id].to_i == current_user.id) then
+      @listings = current_user.listings
+    else
+      @listings = Listing.all
+    end
   end
 
   # GET /listings/1
   # GET /listings/1.json
   def show
+
   end
 
   # GET /listings/new
@@ -73,6 +78,6 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:title, :description, :cost, :image, :user)
+      params.require(:listing).permit(:title, :description, :cost, :image, :user, :itinerary, :date)
     end
 end

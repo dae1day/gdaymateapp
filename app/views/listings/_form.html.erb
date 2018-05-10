@@ -20,7 +20,10 @@
     <%= form.label :description %>
     <%= form.text_area :description, id: :listing_description %>
   </div>
-
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date, id: :listing_date %>
+  </div>
   <div class="field">
     <%= form.label :cost %>
     <%= form.text_field :cost, id: :listing_cost %>
@@ -32,6 +35,13 @@
     Image
     <%= form.file_field :image %>
   </div>
+
+  <div class="field">
+  <%= form.label :itinerary %>
+  <%= form.text_area :itinerary, id: :listing_itinerary %>
+</div>
+
+
  
 
   <div class="actions">

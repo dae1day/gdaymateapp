@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_profile, only: [ :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
   # GET /profiles
   # GET /profiles.json
   def index
@@ -10,6 +10,11 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+    if params[:id] then
+      @profile = Profile.find(params[:id])
+    else
+      @profile = current_user.profile
+    end
   end
 
   # GET /profiles/new
@@ -19,12 +24,14 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/1/edit
   def edit
+    @profile = current_user.profile
   end
 
   # POST /profiles
   # POST /profiles.json
   def create
     @profile = Profile.new(profile_params)
+    @profile.user = current_user
 
     respond_to do |format|
       if @profile.save
@@ -40,9 +47,10 @@ class ProfilesController < ApplicationController
   # PATCH/PUT /profiles/1
   # PATCH/PUT /profiles/1.json
   def update
+    @profile = current_user.profile
     respond_to do |format|
       if @profile.update(profile_params)
-        format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
+        format.html { redirect_to '/profile', notice: 'Profile was successfully updated.' }
         format.json { render :show, status: :ok, location: @profile }
       else
         format.html { render :edit }
@@ -69,6 +77,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:name, :image, :language, :interest, :gender, :user_id)
+      params.require(:profile).permit(:name, :image, :language, :interest, :gender, :user)
     end
 end

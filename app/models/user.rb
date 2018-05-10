@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  has_one :profile
   has_many :listings
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -9,4 +9,9 @@ class User < ApplicationRecord
          mount_uploader :avatar, ImageUploader
 
         
+
+  after_create do
+    self.create_profile
+  end
+
 end

@@ -29,16 +29,19 @@
       Tours
     </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">All Tours</a>
-        <a class="dropdown-item" href="#">My Tours</a>
-        <a class="dropdown-item" href="#">Create a Tour</a>
+        # <a class="dropdown-item" href="tours">All Tours</a>
+        <%= link_to 'All Tours', listings_path, class: 'dropdown-item' %>        
+        <%= link_to 'My Tours', user_listings_path(current_user), class: 'dropdown-item' %>
+        <a class="dropdown-item" href="newtour">Create a Tour</a>
       </div>
     </li>
 
     <li class="nav-item">
-       <a class="nav-link" href="#">My Profile</a>
+
+    
+       <a class="nav-link" href="/profile">My Profile</a>
     </li>
-  
+
 
 
     <li class="nav-item">

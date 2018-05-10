@@ -16,3 +16,16 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+
+
+
+.home {
+    background-image: 
+    url("../images/logo-slogan.png");
+    height:100vh;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
