@@ -19,9 +19,8 @@
 
 
 
-body {
-    font-family: palanquin, josefin sans, sans-serif, Helvetica;
-  
+* {
+    font-family: 'Palanquin', 'josefin sans', sans-serif, Helvetica;
 }
 
 .navbar {
@@ -115,7 +114,14 @@ body {
 }
 
 
-
+.GTM {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #02558B;
+}
 
 .about {
     margin: 50px;
