@@ -1,5 +1,11 @@
 # **Rails App Documentation**
 
+## **G'Day Travel Mate - website link**
+
+https://gdaytravelmate.herokuapp.com/
+
+https://github.com/dae1day/gdaymateapp
+
 ## **Brainstorming**
 Researching popular business ideas online, understanding trending 2-sided marketplaces
 Ideas:
@@ -233,3 +239,13 @@ here is the screenshot of the inital board:
 
 <img src="images/trello-board.png">
 
+## **Future Development**
+
+In future development I hope to take away the cost feature and implement a more negotiable market place. 
+Browsing on the mobile platform hopefully can be done like a tinder swipe feature.
+A ratings feature i something I wish for future development as this can rank user profiles as to who is a trusted 'mate' and can become verified by the site as to a ongoing traveller who can help new users.
+A chat feature would also be a plus as it can help users communicate with one another to hopefully answer questions on certain tours that aren't listed in the description along with altercations to the itinerary.
+
+## **Project Improvements**
+
+the project could be improved with a better search feature which can search with profile names and long with tour fields. 
