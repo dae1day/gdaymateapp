@@ -139,15 +139,7 @@
 }
 
 
-/** LISTING INDEX **/
-/**
-.tour-info {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
 
-**/
 
 
 .col-md-6 {
@@ -185,4 +177,77 @@
 .tour-image-box {
     display: flex;
     justify-content: center;
+}
+
+.new-listing-button {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.listing-image-section {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.listing-image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.listing-title {
+    background: #02558B;
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing-description {
+    font-size: 1.5rem;
+}
+
+
+
+.listing-itinerary-box {
+    margin-top: 1.5rem;
+}
+
+.listing-itinerary-title {
+    font-size: 2rem;
+}
+
+.listing-itinerary {
+    font-size: 1.5rem;
+}
+
+.seller-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border: 1px #ddd solid;
+}
+
+.seller-box {
+    text-align: center;
+    padding: 2rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.seller-box button {
+    margin-top: 6px;
+    width: auto;
+}
+
+
+
+.show-box {
+    padding-top: 120px;
 }
